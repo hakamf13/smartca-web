@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMARTCA</title>
+    <link href="/styles.css" rel="stylesheet" />
+    <link href="/responsive.css" rel="stylesheet" />
+    <link href="/animation.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/marykate" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Chewy&family=League+Spartan:wght@100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/avalon" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/jakob" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Chau+Philomene+One:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="main-container">
+
+        <div id="container-background">
+            <img id="img-cover" src="/assets/backgrounds/menu-c-b.png" alt="">
+        </div>
+
+        <div id="container-content-logo-kampus">
+            <!-- <img id="logo-kampus" src="/assets/icons/logo.svg" alt="logo-kampus"> -->
+        </div>
+
+        <!-- TITLE -->
+        <div id="container-content-title-ragam">
+            <img id="title-text-ragam" src="/assets/icons/gerakan/sengkrak-gejuk.svg" alt="">
+        </div>
+
+        <!-- DANCE -->
+        <div id="container-content-dance-2a">
+            <!-- FRONT -->
+            <div id="content-dance-video">
+
+                <video playsinline autoplay muted loop id="dance-front" controls>
+                    <source id="front-1" src="/assets/videos/sengkrakgejuk-1.mp4" type="video/mp4">
+                    Your browser does not support the video tag
+                </video>
+                <span id="dance-text-front">Depan</span>
+            </div>
+
+            <!-- BACK -->
+            <div id="content-dance-video">
+
+                <video playsinline autoplay muted loop id="dance-back" controls>
+                    <source id="front-1" src="/assets/videos/sengkrakgejuk-2.mp4" type="video/mp4">
+                    Your browser does not support the video tag
+                </video>
+                <span id="dance-text-front">Belakang</span>
+
+            </div>
+        </div>
+
+        <!-- DANCE TEXT -->
+        <div id="container-content-dance-text2">
+            <p id="content-dance-text2">
+                Gerak Sengkrak Gejuk seperti diatas
+            </p>
+        </div>
+
+        <div id="container-navigation-page4b">
+            <a href="/page3/ragam-12.html" id="nav-icon">
+                <img src="/assets/icons/back.svg" alt="" id="icons">
+            </a>
+            <a href="/page3/page-3-menu.html" id="nav-icon">
+                <img src="/assets/icons/home.svg" alt="" id="icons">
+            </a>
+            <a href="/page3/ragam-14.html" id="nav-icon">
+                <img src="/assets/icons/next.svg" alt="" id="icons">
+            </a>
+        </div>
+
+        <!-- OTHERS -->
+        <div id="content-close">
+            <a href="/closing.html">
+                <img id="icon-close" src="/assets/icons/close.svg" alt="">
+            </a>
+        </div>
+
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const frontVideo = document.getElementById("dance-front");
+            const backVideo = document.getElementById("dance-back");
+
+            // Autoplay dan kontrol untuk video depan
+            if (frontVideo) {
+                frontVideo.play().catch((error) => {
+                    console.error("Video depan gagal autoplay:", error);
+                });
+
+                frontVideo.addEventListener("click", function () {
+                    if (frontVideo.paused) {
+                        frontVideo.play();
+                    } else {
+                        frontVideo.pause();
+                    }
+                });
+            }
+
+            // Autoplay dan kontrol untuk video belakang
+            if (backVideo) {
+                backVideo.play().catch((error) => {
+                    console.error("Video belakang gagal autoplay:", error);
+                });
+
+                backVideo.addEventListener("click", function () {
+                    if (backVideo.paused) {
+                        backVideo.play();
+                    } else {
+                        backVideo.pause();
+                    }
+                });
+            }
+        });
+    </script>
+
+</body>
+
+</html>

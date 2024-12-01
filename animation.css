@@ -1,0 +1,68 @@
+@keyframes smooth-steady-heartbeat {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1); 
+    }
+  }
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-15px);
+    }
+    60% {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes bounce-scale {
+    0% {
+        transform: scale(1) translateY(0);
+    }
+    30% {
+        transform: scale(1.1) translateY(-10px); /* Membesar sedikit dan naik */
+    }
+    50% {
+        transform: scale(0.95) translateY(0); /* Mengecil sedikit dan kembali ke posisi semula */
+    }
+    70% {
+        transform: scale(1.05) translateY(-5px); /* Membesar sedikit lagi */
+    }
+    100% {
+        transform: scale(1) translateY(0); /* Kembali ke ukuran normal */
+    }
+}
+
+@keyframes textScroll {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
