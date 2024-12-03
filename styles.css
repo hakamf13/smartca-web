@@ -116,7 +116,7 @@ body {
 #img-main-menu-1 {
     display: flex;
     z-index: 10;
-    width: 350px;
+    width: 300px;
     /* bottom: 0px; */
     justify-content: center;
     align-items: center;
@@ -165,7 +165,8 @@ body {
     flex-direction: row;
     position: absolute;
     z-index: 30;
-    bottom: 240px;
+    /* padding-top: 40px; */
+    bottom: 200px;
 }
 
 #nav {
@@ -290,7 +291,7 @@ body {
     height: 20vh;
     /* background-color: yellow; */
     position: absolute;
-    bottom: 80px;
+    bottom: 50px;
     z-index: 30;
     display: flex;
     justify-content: center;
@@ -362,10 +363,10 @@ body {
 
 #container-navigation-page4b {
     width: 100vw;
-    height: 45vh;
+    height: 35vh;
     /* background-color: yellow; */
     position: absolute;
-    bottom: 50px;
+    bottom: 45px;
     z-index: 30;
     display: flex;
     justify-content: center;
