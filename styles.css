@@ -18,6 +18,12 @@ body {
     /* flex-direction: column; */
 }
 
+#main-container {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+}
+
 #container {
     height: 100vh;
     width: 100vw;
@@ -231,13 +237,13 @@ body {
 /* PAGE 1 */
 
 #container-background {
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 0;
-    position: absolute;
+    position: fixed;
 }
 
 #container-text {
